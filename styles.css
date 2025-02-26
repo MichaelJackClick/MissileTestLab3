@@ -1,0 +1,49 @@
+.missile-link {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+#real-alert {
+    background-color: red;
+    color: white;
+    border: 3px solid darkred;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+    animation: pulse 1s infinite alternate;
+}
+
+#real-alert:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+}
+
+
+#test-only {
+    background-color: yellow;
+    color: black;
+    border: 3px solid orange;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.8);
+}
+
+#test-only:hover {
+    background-color: orange;
+    transform: scale(1.1);
+}
+
+
+@keyframes pulse {
+    from {
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+    }
+    to {
+        box-shadow: 0 0 25px rgba(255, 0, 0, 1);
+    }
+}
+
